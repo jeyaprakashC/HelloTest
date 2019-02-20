@@ -27,7 +27,10 @@ steps:
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: '10' # Options: 8, 9, 10, default, specifyPath
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: true
+    exportOptionsPlist: 'ExportOptions.plist'
+    exportOptions: 'plist'
+    exportTeamId: 'LSVVD8ZPH6'
+    packageApp: 'true'
 
 - task: CopyFiles@2
   inputs:
